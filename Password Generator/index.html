@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/b8d85dfa10.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+		<div class="sections">
+
+			<h2>Password Generator</h2>
+			<div class="result">
+				<span id="result"></span>
+				<button class="btn" id="clipboard"><i class="fas fa-arrow-circle-right"></i></button>
+			</div>
+			<div class="section">
+                <label style="font-family: 'Ubuntu', sans-serif;">Password length </label>
+                <input type="number" id="length" min='4' max='10' value='10'>
+            </div>
+			<div class="section">
+				<label style="font-family: 'Ubuntu', sans-serif;">Only Uppercase</label>
+				<input type="checkbox" id="upper">
+			</div>
+			<div class="section">
+				<label style="font-family: 'Ubuntu', sans-serif;">Only Lowercase</label>
+				<input type="checkbox" id="lower">
+			</div>
+			<div class="section">
+				<label style="font-family: 'Ubuntu', sans-serif;">Only Number</label>
+				<input type="checkbox" id="number">
+			</div>
+			<div class="section">
+				<label style="font-family: 'Ubuntu', sans-serif;">Only symbols</label>
+				<input type="checkbox" id="symbol">
+			</div><br>
+			<button class="button1" id="generate" style="font-family: 'Ubuntu', sans-serif;">Generate Password</button>
+		</div>
+<script src="scripts.js"></script>
+</body>
+</html>
