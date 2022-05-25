@@ -1,0 +1,57 @@
+h2
+{
+	text-align: center;
+	color: #64E986;
+	font-family: "Trebuchet MS";
+	font-size: 35px;
+}
+body
+{
+	background-color: #333;
+}
+.section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin-left:400px;
+	margin-right: 400px;
+	margin-top: 40px;
+	box-shadow: 0px 0px 10px 5px #FFFFC2;
+	color: white;
+}
+.container
+{
+	padding: 20px;
+}
+label
+{
+	margin-right: 15px;
+	font-family: "Trebuchet MS";
+	font-size: 15px;
+}
+
+input
+{
+	padding: 5px;
+}
+.scroll {
+	margin-left: 20px;
+	margin-top: 10px;
+  width: 200px;
+  height: 150px;
+  overflow-y: auto; 
+}
+
+.scroll a {
+  background-color: #eee; 
+  color: black; 
+  display: block;
+  padding: 12px; 
+  text-decoration: none; 
+}
+
+.scroll a:hover {
+  background-color: #ccc; 
+}
