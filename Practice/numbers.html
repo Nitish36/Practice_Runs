@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{background-color: black;color: white;}
+		p{font-family: "Lucida Console", "Courier New", monospace;}
+		button{
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 10px;
+			padding: 10px;
+			background: cornsilk;
+			color: black;
+			border: 1px solid green;
+			transition: background 0.5s,color 0.5s,border 0.5s;
+		}
+		button:hover{background: blue;color: white;border: 1px solid yellow;}
+	</style>
+</head>
+<body>
+	<p>A program that will sort the numbers in various orders</p>
+	<p>These include Descending,Ascending,Alphabetically or Random</p>
+
+	<p id="demo"></p><br>
+	<button onclick="myFunction1()">Sort Alphabetically</button>
+	<br>
+	<button onclick="myFunction2()">Sort Descending</button>
+	<br>
+	<button onclick="myFunction3()">Sort Ascending</button>
+	<br>
+	<button onclick="myFunction4()">Sort Randomly</button>
+	<br>
+	<script>
+		var num = [3,2,0,10,90,300,20,11,56,1,7];
+
+		document.getElementById('demo').innerHTML = num;
+
+		function myFunction1() 
+		{
+			num.sort();
+
+			document.getElementById('demo').innerHTML = num;
+		}
+		function myFunction2() 
+		{
+			num.sort(function(a,b){return b-a});
+
+			document.getElementById('demo').innerHTML = num;
+		}
+		function myFunction3() 
+		{
+			num.sort(function(a,b){return a-b});
+
+			document.getElementById('demo').innerHTML = num;
+		}
+		function myFunction4() 
+		{
+			num.sort(function(a,b){return 0.5-Math.random()});
+
+			document.getElementById('demo').innerHTML = num;
+		}
+	</script>
+</body>
+</html>
