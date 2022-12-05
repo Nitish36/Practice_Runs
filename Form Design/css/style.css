@@ -1,0 +1,30 @@
+body
+{
+    background: url("grad2.webp");
+}
+h1,h3
+{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.mask
+{
+    background-color: rgba(208,226,243,0.2);
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+input
+{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
